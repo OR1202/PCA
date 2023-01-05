@@ -90,6 +90,7 @@ class OnlineWeightedPCA:
         tmp = self.add(f, p)
         self._n = w + self._n
         return tmp
+        
     def ema(self, f, alpha:float=0.5):
         tmp = self.add(f, alpha)
         w = self._n * alpha / (1-alpha)
